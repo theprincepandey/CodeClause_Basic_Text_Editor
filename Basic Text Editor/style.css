@@ -1,0 +1,130 @@
+
+/* ALL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* BODY */
+body{
+    background-image: url(img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+} 
+/* CONTAINER */
+.container {
+    background-color:#fcf9f9bd;
+    width: 100vmin; /*viewpoint */
+    padding: 50px 70px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 15px;
+    height: 95vh;
+
+}
+
+/* OPTIONS */
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+
+}
+button{
+    height: 25px;
+    width: 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+    color:rgb(30, 13, 58);
+}
+button:hover{
+    background-color: rgb(158, 153, 153);
+}
+button:active{
+    background-color: rgb(97, 92, 92);
+}
+button.active{
+    background-color: rgb(158, 153, 153);
+}
+.active{
+    background-color: #e0e9ff;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid ;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.options label,
+.options select {
+    justify-content: center;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    font-size:large;
+    
+}
+.options label{
+    margin-left: 5px;
+    margin-bottom: 50%;
+}
+
+label {
+    justify-content: center;
+    text-align: center;
+}
+
+/* COLORS */
+.input-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;  
+}
+input{
+    
+    width: 30px;
+    height: 30px;
+    border:none;
+    justify-content: center;
+    text-align: center;
+    
+}
+input::-webkit-color-swatch{
+    border-radius: 20px;
+    border: 2px solid black;
+    
+    
+}
+/* TEXTAREA */
+#myTextarea {
+    top: 50px;
+    left: 50px;
+    width: 500px;
+    overflow: auto;
+    margin-top: 10px;
+    border:1px solid #8d8888;
+    padding: 20px;
+    height: 65vh;
+}
+
+#text-input {
+    margin-top: 10px;
+    border:1px solid #dfd1d1;
+    padding: 20px;
+    height: 50vh;
+    width: 500px;
+}
+

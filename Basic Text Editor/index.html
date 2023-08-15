@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLE & TITLE -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icon.png" type="image/png">
+    <title>Text Editor</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="options">
+            <!-- TEXT FORMAT -->
+            <button  class="option-buttonformat" onclick="makebold()"> 
+                <i class="fa-solid fa-bold"></i>
+            </button>
+            <button class="option-buttonformat" onclick="makeitalic()">
+                <i class="fa-solid fa-italic"></i>
+            </button>
+            <button class="option-buttonformat" onclick="makeUnderLine()">
+                <i class="fa-solid fa-underline"></i>
+            </button>
+            <button  class="option-buttonformat" onclick="makestrikethrough()">
+                <i class="fa-solid fa-strikethrough"></i>
+            </button>
+
+            <!-- List -->
+            <button  class="option-button" onclick="insertOrderedList()">
+                <i class="fa-solid fa-list-ol"></i>
+            </button>
+            <button  class="option-button" onclick="insertUnorderedList()">
+                <i class="fa-solid fa-list-ul"></i>
+            </button>
+
+            <!-- UNDO/REDO -->
+            <button  class="option-button" onclick="makeUndo()">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button  class="option-button" onclick="makeRedo()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+
+            <!-- ALIGNMENT -->
+            <button  class="option-button" onclick = "makeAlignLeft()">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button  class="option-button" onclick="makeAlignCenter()">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button  class="option-button" onclick = "makeAlignRight()">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button  class="option-button" onclick="makejustify()">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+
+            <!-- FONT -->
+            <select  id="font-name" class="adv-option-button" onchange="setFontName(this.value)">
+                <option value="">Font Name</option>
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+                
+            </select>
+            <select  id="font-size" class="adv-option-button" onchange="setFontSize(this.value)">
+                <option value="">Font Size</option>
+                <option value="1">8</option>
+                <option value="2">10</option>
+                <option value="3">12</option>
+                <option value="4">14</option>
+                <option value="5">18</option>
+                <option value="6">24</option>
+                <option value="7">36</option>
+            </select>
+
+            <!-- COLOR -->
+            <div class="input-wrapped">
+                
+                <input type="color" id="Colors" class="adv-option-button" onchange="setFontColor(this.value)"/>
+                <label for="Colors">Font Color</label>
+            </div>
+            <!-- TEXTAREA -->
+            <div id="myTextarea" contenteditable="true">
+                
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+<script src="index.js"></script>
+</body>
+</html>
